@@ -1,0 +1,36 @@
+{
+  "name": "elm-spa-webpack-starter",
+  "version": "1.0.0",
+  "description": "Starter Repo for Elm Single Page Apps using Webpack",
+  "main": "./src/app.js",
+  "repository": "https://github.com/kiere/elm-spa-webpack-starter.git",
+  "author": "Kiere El-Shafie",
+  "license": "MIT",
+  "scripts": {
+    "server": "yarn webpack-dev-server -- --env.env=dev",
+    "build": "webpack --progress --color",
+    "build:dev": "yarn build -- --env.env=dev",
+    "build:prod": "yarn build -- --env.env=prod",
+    "webpack-dev-server": "webpack-dev-server --port 9000 --hot --history-api-fallback"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
+    "elm": "^0.18.0",
+    "elm-hot-loader": "^0.5.4",
+    "elm-webpack-loader": "^4.3.1",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "resolve-url-loader": "^2.1.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2",
+    "webpack-merge": "^4.1.0"
+  }
+}
